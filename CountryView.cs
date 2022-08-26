@@ -16,7 +16,7 @@ namespace CountryMVCLab
             Console.Clear();
             Console.WriteLine("COUNTRY DETAILS\n---------------");
             Console.WriteLine($"Name: {DisplayCountry.Name}");
-            Console.WriteLine($"Continent: {DisplayCountry.ContinentEnum.ToString()}");
+            Console.WriteLine($"Continent: {DisplayCountry.ContinentEnum}");
             Console.WriteLine("Flag Colors:");
             foreach(var color in DisplayCountry.Colors)
             {
