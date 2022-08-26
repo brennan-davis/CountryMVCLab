@@ -20,11 +20,11 @@ namespace CountryMVCLab
             Console.WriteLine("Flag Colors:");
             foreach(var color in DisplayCountry.Colors)
             {
-                Console.Write("  -");
+                Console.Write("  - ");
                 Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), color);
                 if(Console.ForegroundColor == ConsoleColor.Black)
                     Console.BackgroundColor = ConsoleColor.White;
-                Console.Write($" {color}");
+                Console.Write($"{color}");
                 Console.WriteLine();
                 Console.ResetColor();
             }
