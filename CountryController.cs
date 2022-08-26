@@ -37,7 +37,7 @@
                 view.Display();
                 Console.WriteLine($"\nWhich country would you like to view? Enter 1-{CountryDb.Count}");
                 bool inputIsInt = int.TryParse(Console.ReadLine(), out int input);
-                while (!inputIsInt && (input < 1 || input > CountryDb.Count))
+                while (!inputIsInt || (input < 1 || input > CountryDb.Count))
                 {
                     Console.WriteLine($"Please input a valid whole number between 1-{CountryDb.Count}");
                     inputIsInt = int.TryParse(Console.ReadLine(), out input);
